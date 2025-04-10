@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_iam_role" "dunviidy_lambda_transcription_exec_role" {
+resource "aws_iam_role" "dunviidy_lambda_transcription_exec_role" {  # Role for Lambda function to execute Transcribe Job
   name = "dunviidy_transcription_exec_role"
 
   assume_role_policy = jsonencode({
